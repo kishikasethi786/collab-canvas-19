@@ -41,7 +41,10 @@ function SettingsPage() {
       .update({ name: name.trim(), avatar_url: avatar.trim() || null })
       .eq("id", user.id);
     setSaving(false);
-    if (error) return toast.error("Couldn't save your profile.");
+    if (error) {
+      toast.error("Couldn't save your profile.");
+      return;
+    }
     await refreshProfile();
     toast.success("Profile saved");
   }
