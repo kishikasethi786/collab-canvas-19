@@ -27,9 +27,9 @@ import type { DocumentRow } from "@/lib/documents";
 export const Route = createFileRoute("/_authenticated/document/$id")({
   head: () => ({
     meta: [
-      { title: "Editor — CollabNote" },
+      { title: "Editor — Online Notepad" },
       { name: "description", content: "Write and edit together in real time with your team." },
-      { property: "og:title", content: "Editor — CollabNote" },
+      { property: "og:title", content: "Editor — Online Notepad" },
       { property: "og:description", content: "Real-time collaborative document editing." },
     ],
   }),
@@ -285,8 +285,8 @@ function EditorPage() {
           >
             <ArrowLeft className="h-4 w-4" />
           </Link>
-          <span className="hidden bg-gradient-to-r from-[hsl(265_85%_65%)] to-[hsl(215_90%_60%)] bg-clip-text text-sm font-bold text-transparent sm:block">
-            CollabNote
+          <span className="gradient-text hidden text-sm font-bold sm:block">
+            Online Notepad
           </span>
           <input
             value={title}

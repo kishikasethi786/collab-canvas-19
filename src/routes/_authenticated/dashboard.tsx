@@ -26,10 +26,10 @@ export const Route = createFileRoute("/_authenticated/dashboard")({
   },
   head: () => ({
     meta: [
-      { title: "Dashboard — CollabNote" },
+      { title: "Dashboard — Online Notepad" },
       { name: "description", content: "All your collaborative documents in one place." },
-      { property: "og:title", content: "Dashboard — CollabNote" },
-      { property: "og:description", content: "Manage and search your CollabNote documents." },
+      { property: "og:title", content: "Dashboard — Online Notepad" },
+      { property: "og:description", content: "Manage and search your Online Notepad documents." },
     ],
   }),
   component: Dashboard,

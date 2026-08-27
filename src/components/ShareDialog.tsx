@@ -82,7 +82,7 @@ export function ShareDialog({
     }
     if (!userId) {
       setBusy(false);
-      toast.error("No CollabNote user with that email.");
+      toast.error("No Online Notepad user with that email.");
       return;
     }
     const { error } = await supabase

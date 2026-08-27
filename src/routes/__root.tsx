@@ -80,11 +80,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "CollabNote — Write together. Think together." },
+      { title: "Online Notepad — Write together. Think together." },
       {
         name: "description",
         content:
-          "CollabNote is a real-time collaborative notepad for teams: shared documents, live presence and automatic saving.",
+          "Online Notepad is a real-time collaborative notepad for teams: shared documents, live presence and automatic saving.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

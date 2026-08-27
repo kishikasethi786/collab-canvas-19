@@ -21,9 +21,9 @@ export function AuthCard({
       <div className="relative z-10 w-full max-w-md">
         <Link to="/" className="mb-8 flex items-center justify-center gap-2">
           <span className="flex h-9 w-9 items-center justify-center rounded-xl gradient-bg font-bold text-primary-foreground">
-            C
+            N
           </span>
-          <span className="text-lg font-bold tracking-tight">CollabNote</span>
+          <span className="text-lg font-bold tracking-tight">Online Notepad</span>
         </Link>
         <div className="glass rounded-2xl p-7 shadow-2xl">
           <h1 className="text-2xl font-bold tracking-tight">{title}</h1>
