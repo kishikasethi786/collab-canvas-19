@@ -113,13 +113,21 @@ function EditorPage() {
       setCanEdit(edit);
       setError(null);
       setLoading(false);
-      if (editorRef.current) editorRef.current.innerHTML = row.content || "";
     }
     void load();
     return () => {
       cancelled = true;
     };
   }, [id, user]);
+
+  // Populate the editor once it is mounted (it does not exist while loading)
+  useEffect(() => {
+    if (!doc || loading) return;
+    if (editorRef.current && editorRef.current.innerHTML !== doc.content) {
+      editorRef.current.innerHTML = doc.content || "";
+    }
+  }, [doc?.id, loading]);
+
 
   // Realtime: presence + content broadcast + db changes
   useEffect(() => {
