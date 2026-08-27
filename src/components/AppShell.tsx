@@ -39,7 +39,7 @@ export function AppShell({
         onClick={() => setOpen(false)}
       >
         <span className="flex h-9 w-9 items-center justify-center rounded-xl gradient-bg font-bold text-primary-foreground">
-          C
+          N
         </span>
         <span className="text-lg font-bold tracking-tight">Online Notepad</span>
       </Link>
