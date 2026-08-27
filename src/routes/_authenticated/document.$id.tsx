@@ -285,7 +285,7 @@ function EditorPage() {
           >
             <ArrowLeft className="h-4 w-4" />
           </Link>
-          <span className="hidden bg-gradient-to-r gradient-text text-sm font-bold text-transparent sm:block">
+          <span className="gradient-text hidden text-sm font-bold sm:block">
             Online Notepad
           </span>
           <input
