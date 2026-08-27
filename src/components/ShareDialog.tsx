@@ -106,14 +106,20 @@ export function ShareDialog({
       .from("document_collaborators")
       .update({ permission: next })
       .eq("id", id);
-    if (error) return toast.error(error.message);
+    if (error) {
+      toast.error(error.message);
+      return;
+    }
     toast.success("Permission updated");
     void load();
   }
 
   async function removePerson(id: string) {
     const { error } = await supabase.from("document_collaborators").delete().eq("id", id);
-    if (error) return toast.error(error.message);
+    if (error) {
+      toast.error(error.message);
+      return;
+    }
     toast.success("Collaborator removed");
     void load();
   }

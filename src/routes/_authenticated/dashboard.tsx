@@ -128,7 +128,10 @@ function Dashboard() {
     if (next === null) return;
     const title = next.trim() || "Untitled document";
     const { error: err } = await supabase.from("documents").update({ title }).eq("id", doc.id);
-    if (err) return toast.error("You don't have permission to rename this document.");
+    if (err) {
+      toast.error("You don't have permission to rename this document.");
+      return;
+    }
     toast.success("Document renamed");
     void load();
   }
@@ -136,7 +139,10 @@ function Dashboard() {
   async function deleteDocument(doc: DocumentSummary) {
     if (!window.confirm(`Delete "${doc.title}"? This cannot be undone.`)) return;
     const { error: err } = await supabase.from("documents").delete().eq("id", doc.id);
-    if (err) return toast.error("Only the owner can delete this document.");
+    if (err) {
+      toast.error("Only the owner can delete this document.");
+      return;
+    }
     toast.success("Document deleted");
     setDocs((d) => d.filter((x) => x.id !== doc.id));
   }
