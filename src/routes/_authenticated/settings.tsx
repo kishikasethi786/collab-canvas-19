@@ -10,9 +10,9 @@ import { AppShell } from "@/components/AppShell";
 export const Route = createFileRoute("/_authenticated/settings")({
   head: () => ({
     meta: [
-      { title: "Settings — CollabNote" },
-      { name: "description", content: "Manage your CollabNote profile, appearance and account." },
-      { property: "og:title", content: "Settings — CollabNote" },
+      { title: "Settings — Online Notepad" },
+      { name: "description", content: "Manage your Online Notepad profile, appearance and account." },
+      { property: "og:title", content: "Settings — Online Notepad" },
       { property: "og:description", content: "Update your profile and appearance preferences." },
     ],
   }),

@@ -10,10 +10,10 @@ export const Route = createFileRoute("/login")({
   ssr: false,
   head: () => ({
     meta: [
-      { title: "Log in — CollabNote" },
-      { name: "description", content: "Log in to your CollabNote account to open your documents." },
-      { property: "og:title", content: "Log in — CollabNote" },
-      { property: "og:description", content: "Access your collaborative documents on CollabNote." },
+      { title: "Log in — Online Notepad" },
+      { name: "description", content: "Log in to your Online Notepad account to open your documents." },
+      { property: "og:title", content: "Log in — Online Notepad" },
+      { property: "og:description", content: "Access your collaborative documents on Online Notepad." },
     ],
   }),
   component: LoginPage,

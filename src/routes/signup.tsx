@@ -10,15 +10,15 @@ export const Route = createFileRoute("/signup")({
   ssr: false,
   head: () => ({
     meta: [
-      { title: "Create your account — CollabNote" },
+      { title: "Create your account — Online Notepad" },
       {
         name: "description",
-        content: "Sign up for CollabNote and start writing collaborative documents with your team.",
+        content: "Sign up for Online Notepad and start writing collaborative documents with your team.",
       },
-      { property: "og:title", content: "Create your account — CollabNote" },
+      { property: "og:title", content: "Create your account — Online Notepad" },
       {
         property: "og:description",
-        content: "Join CollabNote and collaborate on documents in real time.",
+        content: "Join Online Notepad and collaborate on documents in real time.",
       },
     ],
   }),

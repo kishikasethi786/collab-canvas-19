@@ -41,7 +41,7 @@ export function AppShell({
         <span className="flex h-9 w-9 items-center justify-center rounded-xl gradient-bg font-bold text-primary-foreground">
           C
         </span>
-        <span className="text-lg font-bold tracking-tight">CollabNote</span>
+        <span className="text-lg font-bold tracking-tight">Online Notepad</span>
       </Link>
 
       <nav className="flex-1 space-y-1 px-3">
@@ -116,7 +116,7 @@ export function AppShell({
           <button aria-label="Open menu" onClick={() => setOpen(true)} className="rounded-lg p-1.5">
             <Menu className="h-5 w-5" />
           </button>
-          <span className="font-bold tracking-tight">CollabNote</span>
+          <span className="font-bold tracking-tight">Online Notepad</span>
         </div>
         <main className="min-w-0 flex-1">{children}</main>
       </div>

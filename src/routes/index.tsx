@@ -14,13 +14,13 @@ import { useAuth } from "@/lib/auth";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "CollabNote — Write together. Think together." },
+      { title: "Online Notepad — Write together. Think together." },
       {
         name: "description",
         content:
           "Create, edit and share notes with your team in real time. Live presence, automatic saving and granular sharing permissions.",
       },
-      { property: "og:title", content: "CollabNote — Write together. Think together." },
+      { property: "og:title", content: "Online Notepad — Write together. Think together." },
       {
         property: "og:description",
         content: "A real-time collaborative notepad for teams. Your ideas, together in real time.",
@@ -79,7 +79,7 @@ function Landing() {
           <span className="flex h-9 w-9 items-center justify-center rounded-xl gradient-bg text-primary-foreground font-bold">
             C
           </span>
-          <span className="text-lg font-bold tracking-tight">CollabNote</span>
+          <span className="text-lg font-bold tracking-tight">Online Notepad</span>
         </Link>
         <nav className="flex items-center gap-2 text-sm">
           {!loading && user ? (
@@ -118,7 +118,7 @@ function Landing() {
             Your ideas, <span className="gradient-text">together in real time.</span>
           </h1>
           <p className="mx-auto mt-5 max-w-xl text-base text-muted-foreground md:text-lg">
-            CollabNote is a collaborative notepad where your whole team can create, edit and share
+            Online Notepad is a collaborative notepad where your whole team can create, edit and share
             documents at the same time — with live presence and automatic saving built in.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
@@ -180,7 +180,7 @@ function Landing() {
       </main>
 
       <footer className="relative z-10 border-t border-border py-8 text-center text-sm text-muted-foreground">
-        CollabNote — Write together. Think together.
+        Online Notepad — Write together. Think together.
       </footer>
     </div>
   );
