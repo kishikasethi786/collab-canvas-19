@@ -5,10 +5,10 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * CollabNote design system.
- * Dark-first modern SaaS: deep charcoal/navy surfaces, purple -> blue accent,
- * glassmorphism panels, soft borders.
+ * Online Notepad design system.
+ * Warm light-first: soft white paper + beige/sand surfaces, warm clay accent.
  */
+
 
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
